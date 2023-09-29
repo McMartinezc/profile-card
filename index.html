@@ -4,30 +4,74 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            max-width: 300px;
-            margin: auto;
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
             text-align: center;
-            font-family: arial;
+        }
+
+        .target {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .target_name{
+            font-size: 32px;
+        }
+
+        .target_position{
+            color:gray;
+            font-size: 24px;
+        }
+        .target_university{
+            font-size: 20px;
+        }
+
+        .fa{
+            color:black;
+            font-size: 30px;
+        }
+
+        .icons{
+            margin:15px;
+        }
+
+        .button {
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            width: 100%;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .button:hover {
+            background-color: green;
         }
     </style>
 </head>
 
 <body>
-
-    User Profile Card
-
-    <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John" style="width:100%">
-    John Doe
-    CEO & Founder, Example
-    Harvard University
-
-    <a href="#"><i class="fa fa-dribbble"></i></a>
-    <a href="#"><i class="fa fa-twitter"></i></a>
-    <a href="#"><i class="fa fa-linkedin"></i></a>
-    <a href="#"><i class="fa fa-facebook"></i></a>
-    Contact
+    <h1>User Profile Card</h1>
+    <article class="target">
+        <img class="target_img" src="https://www.w3schools.com/w3images/team2.jpg" alt="John" style="width:100%">
+        <h2 class="target_name">John Doe</h2>
+        <h3 class="target_position">CEO & Founder, Example</h3>
+        <h4 class="target_university">Harvard University</h4>
+        <div class="icons">
+            <a href="#"><i class="fa fa-dribbble"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+        </div>
+        <a href="#" class="button">Contact</a>
+    </article>
 
 </body>
 
